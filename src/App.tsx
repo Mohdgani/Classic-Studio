@@ -13,9 +13,11 @@ import ScrollToTop from "./ScrollToTop";
 import Navbar from "./components/Navbar";
 import Social from "../src/Social";
 
+const routerBasename = import.meta.env.DEV ? "/" : "/Suit-Maker";
+
 export default function App() {
   return (
-    <Router basename="/Suit-Maker">
+    <Router basename={routerBasename}>
       <ScrollToTop />
       <main className="min-h-screen bg-ivory selection:bg-gold/30 selection:text-emerald-950 relative">
         <div className="relative z-10">
