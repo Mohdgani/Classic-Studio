@@ -14,7 +14,7 @@ import Navbar from "./components/Navbar";
 import Social from "../src/Social";
 
 export default function App() {
-  return +(
+  return (
     <Router basename={import.meta.env.BASE_URL || "/"}>
       <ScrollToTop />
       <main className="min-h-screen bg-ivory selection:bg-gold/30 selection:text-emerald-950 relative">
